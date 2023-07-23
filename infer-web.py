@@ -127,7 +127,7 @@ hubert_model = None
 def load_hubert():
     global hubert_model
     models, _, _ = checkpoint_utils.load_model_ensemble_and_task(
-        ["hubert_base.pt"],
+        ["pytorch_model.bin"],
         suffix="",
     )
     hubert_model = models[0]
